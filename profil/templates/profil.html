@@ -1,0 +1,246 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Django Tailwind</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+	</head>
+
+	<body class=" bg-neutral-900 h-full">
+		<nav class="bg-neutral-900 z-50 w-full h-auto fixed top-0 backdrop-blur-lg border-b border-neutral-700">
+            <div class="container flex flex-row justify-between my-2 mx-5 text-white w-full items-center">
+                <div class="">
+                    <a href="#"><i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" size-8 ml-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                      </svg>
+                      </i></a>
+                    
+                </div>
+                <div class="">
+                    <ul class="flex flex-row gap-24">
+                        <li class="hover:text-orange-700"><a href="#aboutme">About me</a></li>
+                        <li class="hover:text-orange-700"><a href="#skills">Skills</a></li>
+                        <li class="hover:text-orange-700"><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-row gap-10 opacity-90">
+                    <i><a href="https://www.linkedin.com/in/ahmed-zakaria-namane-a8a366312/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" class="bg-neutral-300 rounded-lg">
+                        <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                    </svg></a></i>
+                    
+                    <i> <a href="https://www.facebook.com/ziko.catalonia.5"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" class="bg-neutral-300 rounded-full">
+                        <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+                    </svg></a></i>
+                    <i><a href="https://www.instagram.com/ziko_nmn23/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 24 24" class="bg-neutral-300 rounded-full">
+                        <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"></path>
+                    </svg></a></i>
+                </div>
+
+            </div>
+
+        </nav>
+        <div class="bg-neutral-800 mx-16 my-16 rounded-2xl shadow-xl">
+        <section id="aboutme" class="pt-20">
+            <div class=" w-11/12 flex flex-wrap justify-center gap-5 rounded-2xl ">
+                <div class="rounded-full">
+                    <img class="rounded-full w-64 h-64 border-4 border-orange-700" src={{profile.photo.url}} alt="" sizes="" srcset="">
+                </div>
+                <div class="flex flex-col font-bold justify-center gap-3">
+                    <div>
+                        <h1 class="text-4xl text-white">Hi,</h1>
+                    </div>
+                  <div>
+                    <h1 class="text-center text-3xl text-white">I am <span class="text-orange-700">{{profile.full_name.upper}}</span></h1>
+                  </div>
+                  <div class="rounded-xl">
+                    <p class="text-white text-4xl">{{profile.description}}</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-20 flex flex-row gap-20 items-center w-full justify-center pb-10">
+            <button id="contactButton" class="border border-white rounded-lg w-32 h-11 text-white hover:scale-105">
+                Contact me
+            </button>
+            <a href="https://github.com/ZikoDz23"><button class="border border-white rounded-lg w-32 h-11 text-white flex flex-row items-center justify-center gap-1 hover:scale-105">
+                <i><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 50 50" class=" bg-white rounded-full">
+                    <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+                </svg></i> <h1>Github repo</h1>
+            </button></a>
+            
+        </section>
+        </div>
+        <div>
+            <h1 class="text-white shadow-lg text-4xl font-bold text-center">Skills</h1>
+        </div>
+        <div class="bg-neutral-800 mx-16 my-16 rounded-2xl shadow-xl">
+            <section id="skills" class="py-10">
+                
+                <div class="flex items-center justify-center py-5 flex-wrap gap-6">
+                    <div class="bg-neutral-900 shadow-xl shadow-orange-700 w-auto h-auto flex flex-row items-center rounded-xl hover:scale-105">
+                        
+                        <div class="w-40 h-40">
+                            <img src="media/Django.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-6 pr-5">
+                            <div>
+                                <h1 class="font-bold text-xl text-white">Django Framework</h1>
+                                <h3 class="text-slate-400">(Python backend framework)</h3>
+                            </div>
+                            
+                            <h2 class="text-white text-xl font-bold">Level : <span class="text-orange-700">EXPERT</span></h2>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-neutral-900 shadow-xl shadow-orange-700 w-auto h-auto flex flex-row items-center rounded-xl hover:scale-105">
+                        
+                        <div class="w-40 h-40 flex justify-center items-center">
+                            <img src="media/Python.png" alt="" class=" w-36 h-36">
+                        </div>
+                        <div class="flex flex-col gap-6 pr-5">
+                            <div>
+                                <h1 class="font-bold text-xl text-white">Python</h1>
+                                <h3 class="text-slate-400">(Programming Language)</h3>
+                            </div>
+                            
+                            <h2 class="text-white text-xl font-bold">Level : <span class="text-orange-700">EXPERT</span></h2>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-neutral-900 shadow-xl shadow-orange-700 w-auto h-auto flex flex-row items-center rounded-xl hover:scale-105">
+                        
+                        <div class="w-40 h-40 flex justify-center items-center">
+                            <img src="media/js.png" alt="" class=" w-36 h-36">
+                        </div>
+                        <div class="flex flex-col gap-6 pr-5">
+                            <div>
+                                <h1 class="font-bold text-xl text-white">JavaScript</h1>
+                                <h3 class="text-slate-400">(Programming Language)</h3>
+                            </div>
+                            
+                            <h2 class="text-white text-xl font-bold">Level : <span class="text-orange-700">Intermediate</span></h2>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-neutral-900 shadow-xl shadow-orange-700 w-auto h-auto flex flex-row items-center rounded-xl hover:scale-105">
+                        
+                        <div class="w-40 h-40 flex justify-center items-center">
+                            <img src="media/html.png" alt="" class=" w-36 h-36">
+                        </div>
+                        <div class="flex flex-col gap-6 pr-5">
+                            <div>
+                                <h1 class="font-bold text-xl text-white">HTML</h1>
+                                <h3 class="text-slate-400">(Web Design Language)</h3>
+                            </div>
+                            
+                            <h2 class="text-white text-xl font-bold">Level : <span class="text-orange-700">Advenced</span></h2>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-neutral-900 shadow-xl shadow-orange-700 w-auto h-auto flex flex-row items-center rounded-xl hover:scale-105">
+                        
+                        <div class="w-40 h-40 flex justify-center items-center">
+                            <img src="media/tailwind.png" alt="" class=" w-36 h-36">
+                        </div>
+                        <div class="flex flex-col gap-6 pr-5">
+                            <div>
+                                <h1 class="font-bold text-xl text-white">Tailwind css</h1>
+                                <h3 class="text-slate-400">(CSS Framework)</h3>
+                            </div>
+                            
+                            <h2 class="text-white text-xl font-bold">Level : <span class="text-orange-700">Advenced</span></h2>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-neutral-900 shadow-xl shadow-orange-700 w-auto h-auto flex flex-row items-center rounded-xl hover:scale-105">
+                        
+                        <div class="w-40 h-40 flex justify-center items-center">
+                            <img src="media/api.png" alt="" class=" w-36 h-36">
+                        </div>
+                        <div class="flex flex-col gap-6 pr-5">
+                            <div>
+                                <h1 class="font-bold text-xl text-white">Restful API's</h1>
+                                <h3 class="text-slate-400">(Application Programming Interface)</h3>
+                            </div>
+                            
+                            <h2 class="text-white text-xl font-bold">Level : <span class="text-orange-700">Basics</span></h2>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        <div>
+            <h1 class="text-white shadow-lg text-4xl font-bold text-center">Projects</h1>
+        </div>
+        <div class="bg-neutral-800 mx-16 my-16 rounded-2xl shadow-xl">
+            <section id="projects" class="py-10">
+                <h1 class="text-5xl text-center text-gray-400">Not Available RN</h1>
+            </section>
+          </div>
+        
+        <footer class="pt-20 text-white">
+            <div class="bottom-0 border-t border-neutral-800 w-full">
+              <div>
+                <h4 class="font-sans text-sm text-center py-4">© 2024 Ahmed Zakaria Namane. All rights reserved.</h4>
+              </div>
+             
+            </div>
+          </footer>
+          <div id="popupModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
+                <h2 class="text-xl font-semibold mb-4">Contact me i'll reply asap</h2>
+                
+                <!-- Purchase Form -->
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="mb-4">
+                        <label for="name" class="block text-black font-sans">Email :</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="Number" class="block text-black font-sans">Phone Number :</label>
+                        <input type="number" id="Number" name="Number" class="w-full px-3 py-2 border rounded" maxlength="10" minlength="10">
+                    </div>
+                    <div class="mb-4">
+                        <label for="address" class="block text-black font-sans">Message :</label>
+                        <textarea id="address" name="address" class="w-full px-3 py-2 border rounded" required></textarea>
+                    </div>
+                    
+                    <div class="flex justify-end">
+                        <button type="button" id="cancelButton" class="mr-4 px-4 py-2 text-gray-600">Cancel</button>
+                        <button type="submit" class="bg-green-700 text-white px-4 py-2 rounded">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+               const buyButton = document.getElementById('contactButton');
+               const popupModal = document.getElementById('popupModal');
+               const cancelButton = document.getElementById('cancelButton');
+           
+               // Show the popup when "Buy" button is clicked
+               buyButton.addEventListener('click', function () {
+                   popupModal.classList.remove('hidden');
+               });
+           
+               // Hide the popup when "Cancel" button is clicked
+               cancelButton.addEventListener('click', function () {
+                   popupModal.classList.add('hidden');
+               });
+           
+               // Optional: Close the popup when clicking outside the modal
+               window.addEventListener('click', function (event) {
+                   if (event.target === popupModal) {
+                       popupModal.classList.add('hidden');
+                   }
+               });
+           });
+           </script>
+	</body>
+</html>
